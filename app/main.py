@@ -9,8 +9,8 @@ def main():
         conn = psycopg2.connect(
             dbname="demo",
             user="user",
-            password="password",
-            host="localhost",  # <--- connect to container via published port
+            password="pasword",
+            host="db",  # <--- connect to container via published port
             port=5432
         )
         print("✅ Connected to DB!")
